@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from './Sidebar';
+import Sidebar from './sideBar';
 
-export default function Header({ onMenuSelect }) {
+export default function Header({ onMenuSelect }:any) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 

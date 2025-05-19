@@ -22,14 +22,14 @@ export default function Sidebar({ isMobile = false, isOpen = true, onClose, onMe
     }
   }, []);
 
-  const handleMenuClick = (menu) => {
+  const handleMenuClick = (menu:any) => {
     setExpandedSubmenus(prev => ({
       ...prev,
       [menu]: !prev[menu]
     }));
   };
 
-  const handleSubMenuClick = (subMenu) => {
+  const handleSubMenuClick = (subMenu:any) => {
     if (onMenuSelect) {
       onMenuSelect(subMenu); 
     }

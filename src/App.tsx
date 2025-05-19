@@ -1,39 +1,4 @@
 
-// import './app.css'; 
-// import Header from './components/header';
-// import Sidebar from './components/sideBar';
-// import EventTable from './components/table';
-
-
-// function App() {
-  
-//   return (
-  
-//     <div className="relative w-full min-h-screen bg-black overflow-hidden flex flex-col">
-// <Header/>
-//     <div className="flex flex-1 relative">
-   
-//         <div className="hidden md:block">
-//           <Sidebar />
-//         </div>
-
-//         <div className="flex-1 p-2 sm:p-4 overflow-x-auto w-full">
-//           <EventTable />
-//         </div>
-//       </div>
-//   <div className="absolute top-1/3 left-2/3 transform -translate-x-1/2 -translate-y-1/2 
-//                   w-[500px] h-[500px] bg-purple-600 rounded-full blur-[120px] opacity-60">
-//   </div>
-//   <div className="absolute top-2/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 
-//                   w-[500px] h-[500px] bg-blue-600 rounded-full blur-[120px] opacity-60">
-//   </div>
-// </div>
-    
-//     )
-// }
-
-// export default App
-
 import { useState } from 'react';
 import './app.css'; 
 import Header from './components/header';
@@ -61,7 +26,7 @@ function App() {
   isMobile={true}
   isOpen={isMobileSidebarOpen}
   onClose={() => setIsMobileSidebarOpen(false)}
-  onMenuSelect={(menu) => {
+  onMenuSelect={(menu:any) => {
     setSelectedMenu(menu);
     setIsMobileSidebarOpen(false);
   }}

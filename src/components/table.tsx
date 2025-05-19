@@ -1,6 +1,4 @@
 
-import React from 'react';
-
 export default function EventTable() {
   const events = Array(7).fill().map((_, index) => ({
     id: index + 1,
@@ -70,7 +68,7 @@ export default function EventTable() {
 
             
             <div className="overflow-y-auto max-h-[65vh]">
-              {events.map((event, index) => (
+              {events.map((event) => (
                 <div 
                   key={event.id} 
                   className="grid grid-cols-6 md:grid-cols-[minmax(150px,1fr)_repeat(5,minmax(100px,1fr))] gap-4 p-3 text-white border-b border-purple-800 hover:bg-purple-800 hover:bg-opacity-30"
